@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Pole</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="/materialize/css/materialize.min.css"  media="screen,projection"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<style>
+.navbar-toggle {
+   margin: 23px 0; 
+}
+nav > ul > li > a:hover { 
+  text-decoration: none; 
+}
+.border{
+    position:relative;
+}
+.border:hover::after{
+    content:'';
+    position:absolute;
+    width: 100%;
+    height: 0;    
+    left:0;
+    bottom:0px; /*Change this to increase/decrease distance*/
+    border-bottom: 2px solid white;  
+}
+.border a.active {
+    border-bottom: 5px solid white; /* simulate increase in white color */
+}
+
+</style>
+
+<body> 
+<nav class="navbar-inverse nav-upper"role="navigation"style="background:rgb(200,0,40);">
+  <div class="container-fluid">
+     <a class="navbar-brand" href="/" style="color:white;font-size:30px;position:absolute;">Pole - Admin Panel</a>
+  </div>
+</nav>
+
+<nav class="navbar navbar-inverse navbar-static-top navbar-lower" style="background:rgb(200,0,40);">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"> <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse navbar-left" id="navbar" role="navigation"style="background:rgb(200,0,40);">
+       <ul class="nav navbar-nav" style="font-size:1.00em;color:white;" >
+                    <li >
+                        <a href="#" class="border" style="color:white;position:relative;">SPARKS</a>
+                    </li>
+                    <li>
+                        <a href="#" class="border" style="color:white;position:relative;">USERS</a>
+                    </li>
+                    <li>
+                        <a href="#" class="border"  style="color:white;position:relative;">NOTIFICATIONS</a>
+                    </li>
+                    <li>
+                        <a href="#" class="border"  style="color:white;position:relative;">SCHEDULING</a>
+                    </li>
+                    <li>
+                        <a href="#" class="border" style="color:white;position:relative;" >PARTNERS</a>
+                    </li>
+                    <li>
+                        <a href="#"  class="border" style="color:white;position:relative;">EVENTS</a>
+                    </li>
+                    <li>
+                        <a href="#"  class="border" style="color:white;position:relative;">ADMINS</a>
+                    </li>
+                </ul>
+          </div>
+        </div>
+</nav>
+    <div class="row">
+    <div class="col s6 m4" style="left:200px;position:relative;height:100%;">
+      <div class="card">
+          <span class="card-title">Card Title</span>
+          <div class="card-content">
+         <div>dsfvdbgdvs</div>
+        </div>
+      </div>
+    </div>
+    <div class="col s6 m4" style="left:200px;position:relative;">
+      <div class="card">
+        <div id="map" style="width:100%;height:400px;background:yellow"></div>
+
+<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.2), zoom: 10
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyD3eXutPCT7UQFRJWbMFd8bqUcVvDk2nkA &callback=myMap"></script>
+    </div>
+  </div>
+  <!-- <div class="row">
+    <div class="col s12 m6" style="padding-left:40px;position:relative;">
+      <div class="card">
+        <div class="card-image">
+          <img src="images/sample-1.jpg">
+          <span class="card-title">Card Title</span>
+          <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+        </div>
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+        </div>
+      </div>
+    </div>
+</div> -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="/materialize/js/materialize.min.js"></script>
+  </body>
+  </html>
